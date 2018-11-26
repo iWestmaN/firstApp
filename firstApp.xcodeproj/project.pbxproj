@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D423C1A2219B1A8F00D645B4 /* CalculatorTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = D423C1A1219B1A8F00D645B4 /* CalculatorTV.swift */; };
 		D439F0CA21872FBC00011BF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D439F0C921872FBC00011BF1 /* AppDelegate.swift */; };
 		D439F0CC21872FBC00011BF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D439F0CB21872FBC00011BF1 /* ViewController.swift */; };
 		D439F0CF21872FBC00011BF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D439F0CD21872FBC00011BF1 /* Main.storyboard */; };
 		D439F0D121872FBD00011BF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D439F0D021872FBD00011BF1 /* Assets.xcassets */; };
 		D439F0D421872FBD00011BF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D439F0D221872FBD00011BF1 /* LaunchScreen.storyboard */; };
+		D4ED03C921A739830040C633 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4ED03C821A739830040C633 /* Car.swift */; };
+		D4ED03CD21A750970040C633 /* AddCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4ED03CC21A750970040C633 /* AddCar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D423C1A1219B1A8F00D645B4 /* CalculatorTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTV.swift; sourceTree = "<group>"; };
 		D439F0C621872FBB00011BF1 /* firstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D439F0C921872FBC00011BF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D439F0CB21872FBC00011BF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		D439F0D021872FBD00011BF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D439F0D321872FBD00011BF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D439F0D521872FBD00011BF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4ED03C821A739830040C633 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		D4ED03CC21A750970040C633 /* AddCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +60,10 @@
 		D439F0C821872FBB00011BF1 /* firstApp */ = {
 			isa = PBXGroup;
 			children = (
+				D4ED03CC21A750970040C633 /* AddCar.swift */,
+				D423C1A1219B1A8F00D645B4 /* CalculatorTV.swift */,
 				D439F0C921872FBC00011BF1 /* AppDelegate.swift */,
+				D4ED03C821A739830040C633 /* Car.swift */,
 				D439F0CB21872FBC00011BF1 /* ViewController.swift */,
 				D439F0CD21872FBC00011BF1 /* Main.storyboard */,
 				D439F0D021872FBD00011BF1 /* Assets.xcassets */,
@@ -135,7 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D423C1A2219B1A8F00D645B4 /* CalculatorTV.swift in Sources */,
 				D439F0CC21872FBC00011BF1 /* ViewController.swift in Sources */,
+				D4ED03C921A739830040C633 /* Car.swift in Sources */,
+				D4ED03CD21A750970040C633 /* AddCar.swift in Sources */,
 				D439F0CA21872FBC00011BF1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
