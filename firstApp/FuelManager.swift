@@ -32,7 +32,6 @@ public class FuelManager {
         if let logs: [FuelLog] = try NSKeyedUnarchiver.unarchiveObject(withFile: path) as? [FuelLog] {
             fuelLogs = logs
             
-            
         }
     }
     
@@ -50,7 +49,7 @@ public class FuelManager {
     
     func processLog(_ log: FuelLog) {
         
-        let index = fuelLogs.index(of: log)
+        let index = fuelLogs.firstIndex(of: log)
         
         
         if index! < (fuelLogs.count - 1) {

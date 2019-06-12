@@ -1,0 +1,90 @@
+
+/* Class = "UILabel"; text = "Total"; ObjectID = "10s-lb-QcL"; */
+"10s-lb-QcL.text" = "Всего";
+
+/* Class = "UILabel"; text = "Amount"; ObjectID = "2oP-yn-9kS"; */
+"2oP-yn-9kS.text" = "Стоимость";
+
+/* Class = "UILabel"; text = "Fuel quantity"; ObjectID = "2pz-LQ-DXT"; */
+"2pz-LQ-DXT.text" = "Кол-во литров";
+
+/* Class = "UILabel"; text = "45.4 l/100 km"; ObjectID = "5HR-vM-ltL"; */
+"5HR-vM-ltL.text" = "45.4 л/100 км";
+
+/* Class = "UILabel"; text = "Odometer"; ObjectID = "6UQ-qj-EcI"; */
+"6UQ-qj-EcI.text" = "Одометр";
+
+/* Class = "UILabel"; text = "average"; ObjectID = "6yj-HD-wR3"; */
+"6yj-HD-wR3.text" = "Средний расход";
+
+/* Class = "UILabel"; text = "$/litre"; ObjectID = "9zF-vV-OJe"; */
+"9zF-vV-OJe.text" = "₽/литр";
+
+/* Class = "UITextField"; placeholder = "$/liter"; ObjectID = "B1j-xq-PAe"; */
+"B1j-xq-PAe.placeholder" = "₽/литр";
+
+/* Class = "UITextField"; placeholder = "Liters / km"; ObjectID = "EMK-Sl-o1a"; */
+"EMK-Sl-o1a.placeholder" = "Литров / км";
+
+/* Class = "UITextField"; placeholder = "km"; ObjectID = "Jh5-Ds-tdg"; */
+"Jh5-Ds-tdg.placeholder" = "км";
+
+/* Class = "UILabel"; text = "Trip"; ObjectID = "Kih-Pr-dTj"; */
+"Kih-Pr-dTj.text" = "Поездка";
+
+/* Class = "UINavigationItem"; title = "Statistic"; ObjectID = "NS8-ID-Coj"; */
+"NS8-ID-Coj.title" = "Статистика";
+
+/* Class = "UILabel"; text = "69.54"; ObjectID = "TAI-pb-Cip"; */
+"TAI-pb-Cip.text" = "69.54";
+
+/* Class = "UITableViewController"; title = "Satistic"; ObjectID = "ZTe-UP-kZT"; */
+"ZTe-UP-kZT.title" = "Статистика";
+
+/* Class = "UILabel"; text = "0.0"; ObjectID = "ZUX-Lh-S3D"; */
+"ZUX-Lh-S3D.text" = "0.0";
+
+/* Class = "UITabBarItem"; title = "Fuel"; ObjectID = "ciG-QZ-yZ7"; */
+"ciG-QZ-yZ7.title" = "Топливо";
+
+/* Class = "UILabel"; text = "l/100 km"; ObjectID = "eaP-Bo-foL"; */
+"eaP-Bo-foL.text" = "л/100 км";
+
+/* Class = "UITextField"; placeholder = "odometer "; ObjectID = "iKr-2g-qBm"; */
+"iKr-2g-qBm.placeholder" = "Одометр";
+
+/* Class = "UITabBarItem"; title = "Statistic"; ObjectID = "ivi-CE-SeQ"; */
+"ivi-CE-SeQ.title" = "Статистика";
+
+/* Class = "UITableViewSection"; headerTitle = "Results"; ObjectID = "lG4-7H-A8f"; */
+"lG4-7H-A8f.headerTitle" = "Итого";
+
+/* Class = "UILabel"; text = "Efficiency"; ObjectID = "ngI-pL-uTq"; */
+"ngI-pL-uTq.text" = "Экономичность";
+
+/* Class = "UITableViewSection"; headerTitle = "Trip settings"; ObjectID = "oFx-eX-RNa"; */
+"oFx-eX-RNa.headerTitle" = "Данные поездки";
+
+/* Class = "UILabel"; text = "200 km"; ObjectID = "pd1-2i-Wr9"; */
+"pd1-2i-Wr9.text" = "200 км";
+
+/* Class = "UILabel"; text = "Fuel"; ObjectID = "rak-In-cDn"; */
+"rak-In-cDn.text" = "Топливо";
+
+/* Class = "UITextField"; placeholder = "amount"; ObjectID = "sva-eb-yf4"; */
+"sva-eb-yf4.placeholder" = "Стоимость";
+
+/* Class = "UITextField"; placeholder = "quantity"; ObjectID = "uMD-jB-nk8"; */
+"uMD-jB-nk8.placeholder" = "Кол-во";
+
+/* Class = "UILabel"; text = "liters / 100km"; ObjectID = "vcp-ly-T1s"; */
+"vcp-ly-T1s.text" = "Литров / 100км";
+
+/* Class = "UITabBarItem"; title = "Calculator"; ObjectID = "xXY-Gx-Ca7"; */
+"xXY-Gx-Ca7.title" = "Калькулятор";
+
+/* Class = "UINavigationItem"; title = "Trip calculator"; ObjectID = "xvB-pG-aCB"; */
+"xvB-pG-aCB.title" = "Калькулятор пути";
+
+/* Class = "UINavigationItem"; title = "Fuel"; ObjectID = "yOa-C4-vNq"; */
+"yOa-C4-vNq.title" = "Топливо";

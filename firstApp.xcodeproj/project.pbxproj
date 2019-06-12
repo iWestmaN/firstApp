@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F2D613040BAFE859B2303BE /* Pods_firstApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C29957BED89ACF960061E7 /* Pods_firstApp.framework */; };
 		D4111695221A04930084AFE5 /* StatisticGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4111694221A04930084AFE5 /* StatisticGraphView.swift */; };
 		D423C1A2219B1A8F00D645B4 /* CalculatorTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = D423C1A1219B1A8F00D645B4 /* CalculatorTV.swift */; };
 		D439F0CA21872FBC00011BF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D439F0C921872FBC00011BF1 /* AppDelegate.swift */; };
@@ -19,9 +20,12 @@
 		D473A95F2214586000288E17 /* FuelLogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D473A95E2214586000288E17 /* FuelLogTableViewController.swift */; };
 		D473A961221458D500288E17 /* LogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D473A960221458D500288E17 /* LogCell.swift */; };
 		D473A9632214598500288E17 /* AddLogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D473A9622214598500288E17 /* AddLogTableViewController.swift */; };
+		D4B7EF6922B112A000BDDB5D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4B7EF6722B112A000BDDB5D /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		178267633F85F47073F1BA62 /* Pods-firstApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firstApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-firstApp/Pods-firstApp.release.xcconfig"; sourceTree = "<group>"; };
+		421DD4741FE7F247A94C6ACC /* Pods-firstApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firstApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-firstApp/Pods-firstApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D4111694221A04930084AFE5 /* StatisticGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticGraphView.swift; sourceTree = "<group>"; };
 		D423C1A1219B1A8F00D645B4 /* CalculatorTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTV.swift; sourceTree = "<group>"; };
 		D439F0C621872FBB00011BF1 /* firstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +40,12 @@
 		D473A95E2214586000288E17 /* FuelLogTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelLogTableViewController.swift; sourceTree = "<group>"; };
 		D473A960221458D500288E17 /* LogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogCell.swift; sourceTree = "<group>"; };
 		D473A9622214598500288E17 /* AddLogTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLogTableViewController.swift; sourceTree = "<group>"; };
+		D4B7EF6822B112A000BDDB5D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D4B7EF6A22B112AF00BDDB5D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D4EF2BCD22B0377A0007C653 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		D4EF2BCE22B0377A0007C653 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		D4EF2BD022B03D5F0007C653 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		F4C29957BED89ACF960061E7 /* Pods_firstApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firstApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F2D613040BAFE859B2303BE /* Pods_firstApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,8 +63,18 @@
 		262C8DE0628DC3940BC4FCD3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F4C29957BED89ACF960061E7 /* Pods_firstApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43801F3A2525EFF596BF2968 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				421DD4741FE7F247A94C6ACC /* Pods-firstApp.debug.xcconfig */,
+				178267633F85F47073F1BA62 /* Pods-firstApp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		D439F0BD21872FBB00011BF1 = {
@@ -62,6 +83,7 @@
 				D439F0C821872FBB00011BF1 /* firstApp */,
 				D439F0C721872FBB00011BF1 /* Products */,
 				262C8DE0628DC3940BC4FCD3 /* Frameworks */,
+				43801F3A2525EFF596BF2968 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,11 +98,12 @@
 		D439F0C821872FBB00011BF1 /* firstApp */ = {
 			isa = PBXGroup;
 			children = (
+				D4B7EF6722B112A000BDDB5D /* Localizable.strings */,
+				D439F0CD21872FBC00011BF1 /* Main.storyboard */,
+				D439F0D221872FBD00011BF1 /* LaunchScreen.storyboard */,
 				D423C1A1219B1A8F00D645B4 /* CalculatorTV.swift */,
 				D439F0C921872FBC00011BF1 /* AppDelegate.swift */,
-				D439F0CD21872FBC00011BF1 /* Main.storyboard */,
 				D439F0D021872FBD00011BF1 /* Assets.xcassets */,
-				D439F0D221872FBD00011BF1 /* LaunchScreen.storyboard */,
 				D439F0D521872FBD00011BF1 /* Info.plist */,
 				D473A9582214566B00288E17 /* FuelManager.swift */,
 				D473A95E2214586000288E17 /* FuelLogTableViewController.swift */,
@@ -127,6 +150,7 @@
 				TargetAttributes = {
 					D439F0C521872FBB00011BF1 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -137,6 +161,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = D439F0BD21872FBB00011BF1;
 			productRefGroup = D439F0C721872FBB00011BF1 /* Products */;
@@ -154,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D439F0D421872FBD00011BF1 /* LaunchScreen.storyboard in Resources */,
+				D4B7EF6922B112A000BDDB5D /* Localizable.strings in Resources */,
 				D439F0D121872FBD00011BF1 /* Assets.xcassets in Resources */,
 				D439F0CF21872FBC00011BF1 /* Main.storyboard in Resources */,
 			);
@@ -232,6 +258,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				D439F0CE21872FBC00011BF1 /* Base */,
+				D4EF2BCD22B0377A0007C653 /* ru */,
+				D4EF2BD022B03D5F0007C653 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -240,8 +268,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				D439F0D321872FBD00011BF1 /* Base */,
+				D4EF2BCE22B0377A0007C653 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D4B7EF6722B112A000BDDB5D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4B7EF6822B112A000BDDB5D /* ru */,
+				D4B7EF6A22B112AF00BDDB5D /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -251,6 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -312,6 +351,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -365,6 +405,7 @@
 		};
 		D439F0D921872FBD00011BF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 421DD4741FE7F247A94C6ACC /* Pods-firstApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,13 +417,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Lishchenko.firstApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		D439F0DA21872FBD00011BF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 178267633F85F47073F1BA62 /* Pods-firstApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,7 +436,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Lishchenko.firstApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

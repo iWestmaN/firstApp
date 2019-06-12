@@ -22,11 +22,12 @@ class AddLogTableViewController: UITableViewController {
         attributedPlaceholder()
         tableView.separatorColor = UIColor.darkGray
         navigationController!.navigationItem.backBarButtonItem?.tintColor = .orange
-        actionButton?.setTitle("Add", for: .normal)
+        actionButton?.setTitle(NSLocalizedString( "Add", comment: "Add"), for: .normal)
         
         if self.fuelLog != nil {
             setLogView(self.fuelLog!)
-            actionButton?.setTitle("Update", for: .normal)
+            actionButton?.setTitle(NSLocalizedString("Update", comment: "Update"), for: .normal)
+            
         } else if !FuelManager.shared.fuelLogs.isEmpty {
             setLogView(FuelManager.shared.fuelLogs.last!)
         }
@@ -48,9 +49,9 @@ class AddLogTableViewController: UITableViewController {
             NSAttributedString.Key.font : UIFont.systemFont(ofSize: 15.0)]
             as [NSAttributedString.Key : Any]
         
-        odometerTextField?.attributedPlaceholder = NSMutableAttributedString(string: "Odometer", attributes: placeholderAttributes)
-        quantityTextField?.attributedPlaceholder = NSMutableAttributedString(string: "Quantity", attributes: placeholderAttributes)
-        amountTextField?.attributedPlaceholder = NSMutableAttributedString(string: "Amount", attributes: placeholderAttributes)
+        odometerTextField?.attributedPlaceholder = NSMutableAttributedString(string: NSLocalizedString("Odometr", comment: "Odometr"), attributes: placeholderAttributes)
+        quantityTextField?.attributedPlaceholder = NSMutableAttributedString(string: NSLocalizedString("Quantity", comment: "Quantity"), attributes: placeholderAttributes)
+        amountTextField?.attributedPlaceholder = NSMutableAttributedString(string: NSLocalizedString("Amount", comment: "Amount"), attributes: placeholderAttributes)
     }
     
     @IBAction func save() {

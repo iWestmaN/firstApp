@@ -17,7 +17,7 @@ class StatisticGraphView: UITableViewController {
     @IBOutlet weak var avarageLabel: UILabel!
     @IBOutlet weak var lineChartView: LineChartView!
     
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setChartValues()
@@ -29,6 +29,10 @@ class StatisticGraphView: UITableViewController {
         
     }
     
+    func chartChek(){
+        
+    }
+    
     func setChartValues() {
         
         var numbers : [Double] = setChart()
@@ -37,9 +41,10 @@ class StatisticGraphView: UITableViewController {
         for i in 0..<numbers.count {
             let value = ChartDataEntry(x: Double(i), y: numbers[i]) // here we set the X and Y status in a data chart entry
             lineChartEntry.append(value) // here we add it to the data set
+            
         }
         
-        let line1 = LineChartDataSet(values: lineChartEntry, label: "Liters per 100 km") //Here we convert lineChartEntry to a LineChartDataSet
+        let line1 = LineChartDataSet(values: lineChartEntry, label: NSLocalizedString("Liters/100km", comment: "Liters/100km")) //Here we convert lineChartEntry to a LineChartDataSet
         
         line1.lineDashLengths = [5, 2.5]
         line1.highlightLineDashLengths = [10, 2.5]
@@ -81,10 +86,11 @@ class StatisticGraphView: UITableViewController {
         for b in stride(from: 0, through: i, by: 1){
             let a = Double(FuelManager.shared.fuelLogs[b].litersPerOneHundredKm)
             arr.append(a)
-            //    print(arr)
+            //  print(arr)
         }
         return arr.reversed()
     }
+    
     func avarage() -> Double{
         let arrNumber = setChart()
         let a = (arrNumber.reduce(0, +)) / Double(arrNumber.count)

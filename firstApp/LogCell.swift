@@ -17,15 +17,15 @@ class LogCell: UITableViewCell {
     public var fuelLog: FuelLog? {
         didSet {
             if let distance = fuelLog?.distanceInKiloMeter {
-                distanceLabel?.text = "\(distance.roundTo(places: 2)) km"
+                distanceLabel?.text = "\(distance.roundTo(places: 2)) \(NSLocalizedString("km", comment: "km"))"
             }
             
             if let consumption = fuelLog?.litersPerOneHundredKm {
-                priceLabel?.text = "\(consumption.roundTo(places: 2)) "
+                priceLabel?.text = "\(consumption.roundTo(places: 2))"
             }
             
             if let price = fuelLog?.pricePerLitre {
-                mileageLabel?.text = "\(price.roundTo(places: 2)) $/liter"
+                mileageLabel?.text = "\(price.roundTo(places: 2)) \(NSLocalizedString("$/liter", comment: "$/liter"))"
             }
         }
     }

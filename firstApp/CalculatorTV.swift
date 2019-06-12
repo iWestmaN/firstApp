@@ -31,7 +31,7 @@ class CalculatorTV: UITableViewController {
         header.textLabel?.textColor = UIColor.orange
         
     }
-    
+
     func fuelCaclulator() -> [String] {
         
         let fuelEfficiency = Double(efficiencyInput.text!)
@@ -49,7 +49,7 @@ class CalculatorTV: UITableViewController {
         } else {
             total = 0
         }
-        let result = ["\(fuel.withCommas()) L", "\(total.withCommas()) $"]
+        let result = ["\(fuel.withCommas()) \(NSLocalizedString("L", comment: "L"))", "\(total.withCommas()) \(NSLocalizedString("$", comment: "$"))"]
         return result
     }
     // добавление Done & Clear All кнопок
@@ -91,9 +91,9 @@ class CalculatorTV: UITableViewController {
             NSAttributedString.Key.font : UIFont.systemFont(ofSize: 15.0)]
             as [NSAttributedString.Key : Any]
         
-        efficiencyInput.attributedPlaceholder = NSMutableAttributedString(string: "Liters/km", attributes: placeholderAttributes)
-        distanceInput.attributedPlaceholder = NSMutableAttributedString(string: "km", attributes: placeholderAttributes)
-        pricePerLiter.attributedPlaceholder = NSMutableAttributedString(string: "$/liter", attributes: placeholderAttributes)
+        efficiencyInput.attributedPlaceholder = NSMutableAttributedString(string: NSLocalizedString("l/km", comment: "l/km"), attributes: placeholderAttributes)
+        distanceInput.attributedPlaceholder = NSMutableAttributedString(string:  NSLocalizedString("km", comment: "km"), attributes: placeholderAttributes)
+        pricePerLiter.attributedPlaceholder = NSMutableAttributedString(string: NSLocalizedString("$/liter", comment: "$/liter"), attributes: placeholderAttributes)
     }
     
     @IBAction func donePressed(_ sender: UIBarButtonItem) {
