@@ -20,7 +20,6 @@ class AddLogTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        attributedPlaceholder()
         tableView.separatorColor = UIColor.darkGray
         
    //     navigationController!.navigationItem.backBarButtonItem?.tintColor = .orange
