@@ -43,7 +43,6 @@ public class FuelLog: NSObject, NSCoding {
         distanceInKiloMeter = aDecoder.decodeObject(forKey: "distanceInKiloMeter") as! CGFloat
         litersPerOneHundredKm = aDecoder.decodeObject(forKey: "litersPerOneHundredKm") as! CGFloat
         pricePerLitre = aDecoder.decodeObject(forKey: "pricePerLitre") as! CGFloat
-        
         UserDefaults.standard.set(litersPerOneHundredKm, forKey: "numbers")
         
     }

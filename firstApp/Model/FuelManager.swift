@@ -14,35 +14,29 @@ public class FuelManager {
     public var fuelLogs = [FuelLog]()
     
     public func addLog(_ log: FuelLog) {
-        
         fuelLogs.insert(log, at: 0)
         processLog(log)
         saveLogs()
     }
     
     public func updateLog(_ fuelLog: FuelLog) {
-        
         processLog(fuelLog)
         saveLogs()
     }
     
     public func fetchLogs() {
-        
         let path = getArchivePath()
         if let logs: [FuelLog] = try NSKeyedUnarchiver.unarchiveObject(withFile: path) as? [FuelLog] {
             fuelLogs = logs
-            
         }
     }
     
     public func removeAllLogs() {
-        
         fuelLogs.removeAll()
         saveLogs()
     }
     
     public func removeLogAt(_ index: Int) {
-        
         fuelLogs.remove(at: index)
         saveLogs()
     }
@@ -50,7 +44,6 @@ public class FuelManager {
     func processLog(_ log: FuelLog) {
         
         let index = fuelLogs.firstIndex(of: log)
-        
         
         if index! < (fuelLogs.count - 1) {
             
@@ -108,6 +101,7 @@ public class FuelManager {
         
         let path = getArchivePath()
         NSKeyedArchiver.archiveRootObject(fuelLogs, toFile: path)
+        
         
     }
     
