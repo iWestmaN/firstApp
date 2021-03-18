@@ -35,6 +35,7 @@ class AddLogTableViewController: UITableViewController {
         odometerTextField?.becomeFirstResponder()
     }
     
+    
     func setLogView(_ fuelLog: FuelLog) {
         odometerTextField?.placeholder = String(describing: fuelLog.odometer)
         quantityTextField?.placeholder = String(describing: fuelLog.quantity)
@@ -71,14 +72,17 @@ class AddLogTableViewController: UITableViewController {
         }
         
         fuelLog == nil ? FuelManager.shared.addLog(log) : FuelManager.shared.updateLog(fuelLog!)
-        self.tableView.reloadData()
+    
         dismiss(animated: true)
-        navigationController?.popViewController(animated: true)
+        navigationController?.popToRootViewController(animated: true)
+        
       
 
     }
     @IBAction func cancleButton(_ sender: UIBarButtonItem) {
-        dismiss(animated: true)
       navigationController?.popToRootViewController(animated: true)
+      dismiss(animated: true)
     }
 }
+
+

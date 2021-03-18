@@ -11,10 +11,10 @@ import UIKit
 class FuelLogTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
-
-        super.viewWillAppear(animated)
+        super.viewWillAppear(true)
         tableView.reloadData()
     }
+    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return FuelManager.shared.fuelLogs.count
@@ -23,6 +23,7 @@ class FuelLogTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LogCellIdentifier") as? LogCell
         cell?.fuelLog = FuelManager.shared.fuelLogs[indexPath.row]
+       
         return cell!
     }
     
@@ -34,6 +35,7 @@ class FuelLogTableViewController: UITableViewController {
         navigationController?.pushViewController(viewController!, animated: true)
         
     }
+    
     
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
@@ -48,6 +50,11 @@ class FuelLogTableViewController: UITableViewController {
             FuelManager.shared.removeLogAt(indexPath.row)
             tableView.reloadData()
         }
+    }
+    @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
+        let viewController = storyboard?.instantiateViewController(withIdentifier: "AddLogTableViewController") as? AddLogTableViewController
+        navigationController?.pushViewController(viewController!, animated: true)
+
     }
     
 }

@@ -20,12 +20,13 @@ class StatisticGraphView: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        if FuelManager.shared.fuelLogs.count == 0 {
+        if FuelManager.shared.fuelLogs.count <= 1 {
             setChartValues()
             avarageLabel.text = "0"
         } else {
             setChartValues()
             avarageLabel.text = String(avarage())
+            print(FuelManager.shared.fuelLogs.count)
         }
     }
     
@@ -121,8 +122,6 @@ class StatisticGraphView: UIViewController {
    public func avarage() -> Double{
         let arrNumber = setChart()
         let a = (arrNumber.reduce(0, +)) / Double(arrNumber.count)
-    print("a")
-          print(a)
         UserDefaults.standard.set(a.rounded(toPlaces: 2), forKey: "avarage")
         return a.rounded(toPlaces: 2)
     }

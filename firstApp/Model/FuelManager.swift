@@ -9,7 +9,7 @@
 import Foundation
 
 public class FuelManager {
-    
+    let dataFilePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("array.plist")
     public static let shared = FuelManager()
     public var fuelLogs = [FuelLog]()
     
@@ -25,9 +25,15 @@ public class FuelManager {
     }
     
     public func fetchLogs() {
-        let path = getArchivePath()
-        if let logs: [FuelLog] = try NSKeyedUnarchiver.unarchiveObject(withFile: path) as? [FuelLog] {
-            fuelLogs = logs
+        var logs = [FuelLog]()
+        if let data = try? Data(contentsOf: dataFilePath!) {
+            let decoder = PropertyListDecoder()
+            do {
+                logs = try decoder.decode([FuelLog].self, from: data)
+                fuelLogs = logs
+            } catch {
+                print(error)
+            }
         }
     }
     
@@ -57,17 +63,6 @@ public class FuelManager {
         
     }
     
-    public func getArchivePath() -> String {
-        
-        let paths = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory,
-                                                        FileManager.SearchPathDomainMask.allDomainsMask,
-                                                        true)
-        let path: AnyObject = paths[0] as AnyObject
-        
-        return path.appending("/array.plist")
-        
-    }
-    
     func saveLogs() {
         
         let userDefaults = UserDefaults(suiteName: "WestmaN")
@@ -78,29 +73,32 @@ public class FuelManager {
             if let mileage = log?.litersPerOneHundredKm {
                 userDefaults?.set(String(describing: mileage.roundTo(places: 2)),
                                   forKey: "FuelLogMilege")
-                
             }
             
             if let price = log?.pricePerLitre {
                 userDefaults?.set(String(describing: price.roundTo(places: 2)),
                                   forKey: "FuelLogPrice")
-                
             }
             
             if let distance = log?.distanceInKiloMeter {
                 userDefaults?.set(String(describing: distance.roundTo(places: 2)),
                                   forKey: "FuelLogDistance")
-                
             }
         } else {
             
             userDefaults?.set("0", forKey: "FuelLogMilege")
             userDefaults?.set("0", forKey: "FuelLogPrice")
             userDefaults?.set("0", forKey: "FuelLogDistance")
+            
         }
         
-        let path = getArchivePath()
-        NSKeyedArchiver.archiveRootObject(fuelLogs, toFile: path)
+        let encoder = PropertyListEncoder()
+        do {
+            let data = try encoder.encode(fuelLogs)
+            try data.write(to: dataFilePath!)
+        } catch {
+            print(error)
+        }
         
         
     }

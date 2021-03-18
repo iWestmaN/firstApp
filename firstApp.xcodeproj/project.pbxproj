@@ -21,7 +21,6 @@
 		D473A961221458D500288E17 /* LogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D473A960221458D500288E17 /* LogCell.swift */; };
 		D473A9632214598500288E17 /* AddLogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D473A9622214598500288E17 /* AddLogTableViewController.swift */; };
 		D4B7EF6922B112A000BDDB5D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4B7EF6722B112A000BDDB5D /* Localizable.strings */; };
-		D4E328CE256C4A7700303042 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E328CD256C4A7700303042 /* SwiftUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +42,6 @@
 		D473A9622214598500288E17 /* AddLogTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLogTableViewController.swift; sourceTree = "<group>"; };
 		D4B7EF6822B112A000BDDB5D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D4B7EF6A22B112AF00BDDB5D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		D4E328CA256C4A7700303042 /* firstAppWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = firstAppWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4E328CD256C4A7700303042 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		D4EF2BCD22B0377A0007C653 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		D4EF2BCE22B0377A0007C653 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -57,14 +55,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F2D613040BAFE859B2303BE /* Pods_firstApp.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D4E328C7256C4A7700303042 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D4E328CE256C4A7700303042 /* SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				D439F0C621872FBB00011BF1 /* firstApp.app */,
-				D4E328CA256C4A7700303042 /* firstAppWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,8 +126,6 @@
 			children = (
 				D439F0CD21872FBC00011BF1 /* Main.storyboard */,
 				D439F0D221872FBD00011BF1 /* LaunchScreen.storyboard */,
-				D473A960221458D500288E17 /* LogCell.swift */,
-				D4111694221A04930084AFE5 /* StatisticGraphView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -146,6 +133,8 @@
 		D49B1E5B25C45594002720A2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D473A960221458D500288E17 /* LogCell.swift */,
+				D4111694221A04930084AFE5 /* StatisticGraphView.swift */,
 				D423C1A1219B1A8F00D645B4 /* CalculatorTV.swift */,
 				D473A95E2214586000288E17 /* FuelLogTableViewController.swift */,
 				D473A9622214598500288E17 /* AddLogTableViewController.swift */,
@@ -175,23 +164,6 @@
 			productReference = D439F0C621872FBB00011BF1 /* firstApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D4E328C9256C4A7700303042 /* firstAppWidgetExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D4E328DB256C4A7800303042 /* Build configuration list for PBXNativeTarget "firstAppWidgetExtension" */;
-			buildPhases = (
-				D4E328C6256C4A7700303042 /* Sources */,
-				D4E328C7256C4A7700303042 /* Frameworks */,
-				D4E328C8256C4A7700303042 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = firstAppWidgetExtension;
-			productName = firstAppWidgetExtension;
-			productReference = D4E328CA256C4A7700303042 /* firstAppWidgetExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,15 +171,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1220;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Igor Lishchenko";
 				TargetAttributes = {
 					D439F0C521872FBB00011BF1 = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1020;
-					};
-					D4E328C9256C4A7700303042 = {
-						CreatedOnToolsVersion = 12.2;
 					};
 				};
 			};
@@ -226,7 +195,6 @@
 			projectRoot = "";
 			targets = (
 				D439F0C521872FBB00011BF1 /* firstApp */,
-				D4E328C9256C4A7700303042 /* firstAppWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -240,13 +208,6 @@
 				D4B7EF6922B112A000BDDB5D /* Localizable.strings in Resources */,
 				D439F0D121872FBD00011BF1 /* Assets.xcassets in Resources */,
 				D439F0CF21872FBC00011BF1 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D4E328C8256C4A7700303042 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,13 +277,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D4E328C6256C4A7700303042 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -384,6 +338,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -446,6 +401,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -490,7 +446,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Lishchenko.firstApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -509,54 +465,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Lishchenko.firstApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		D4E328DC256C4A7800303042 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5VTXTVQH26;
-				INFOPLIST_FILE = firstAppWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Lishchenko.firstApp.firstAppWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		D4E328DD256C4A7800303042 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5VTXTVQH26;
-				INFOPLIST_FILE = firstAppWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Lishchenko.firstApp.firstAppWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -577,15 +486,6 @@
 			buildConfigurations = (
 				D439F0D921872FBD00011BF1 /* Debug */,
 				D439F0DA21872FBD00011BF1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D4E328DB256C4A7800303042 /* Build configuration list for PBXNativeTarget "firstAppWidgetExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D4E328DC256C4A7800303042 /* Debug */,
-				D4E328DD256C4A7800303042 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

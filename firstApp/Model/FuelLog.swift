@@ -9,7 +9,11 @@
 import Foundation
 import UIKit
 
-public class FuelLog: NSObject, NSCoding {
+public class FuelLog: NSObject, NSCoding, NSSecureCoding, Codable {
+    public static var supportsSecureCoding: Bool {
+        return true
+    }
+    
     
     public var odometer: CGFloat = 0.0
     public var quantity: CGFloat = 0.0
